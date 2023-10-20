@@ -1,0 +1,15 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+showAuth:
+    path: /show/{name}
+    controller: App\Controller\AuthController::showAuth
+
+index:
+    path: /authors
+    controller: App\Controller\AuthController::list
+
+
+authorDetails:
+    path: /authorDetails/{id}
+    controller: App\Controller\AuthController::authorDetails

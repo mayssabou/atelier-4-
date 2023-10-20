@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Détails de l'auteur</title>
+    
+</head>
+<style>
+
+h1 {
+    color: #333;
+    font-size: 24px;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p strong {
+    color: #007bff;
+}
+
+</style>
+<body>
+    <h1>Détails du livre</h1>
+    <p><strong>Reference :</strong> {{ book.ref }}</p>
+     <p><strong>Author :</strong> {{ book.author.username }}</p>
+    <p><strong>Titre :</strong> {{ book.title }}</p>
+    <p><strong>Categorie :</strong> {{ book.category }}</p>
+    <p><strong>Publication date :</strong> {{book.publicationDate |date("m/d/Y") }}</p>
+    <p><strong>Published :</strong> {{ book.published }}</p>
+</body>
+</html>
